@@ -1,7 +1,14 @@
 # Flashcard Leitner System
 
 A full-stack application for managing flashcards using the Leitner system, built with React (Vite) frontend and Express.js backend.
+---
 
+## 🔑 Demo Credentials
+To try the app, use the following credentials:  
+- **Username:** `mukul`  
+- **Password:** `mukul`  
+
+---
 ## Prerequisites
 
 - Node.js (v18 or higher)
@@ -55,25 +62,39 @@ PORT=5000
    ```
 3. The API will be available at `http://localhost:5000`
 
-## Project Structure
+---
 
-```
-.
-├── client/              # React frontend
-│   ├── public/           # Static assets
-│   ├── src/              # Application source code
-│   │   ├── components/   # React components
-│   │   ├── pages/        # Page components
-│   │   ├── services/     # API services
-│   │   └── ...          # Other source files
-├── server/               # Express backend
-│   ├── config/           # Configuration files
-│   ├── controllers/      # Route controllers
-│   ├── middleware/       # Custom middleware
-│   ├── models/           # Mongoose models
-│   ├── routes/           # API routes
-│   └── server.js         # Main server file
-```
+## 🎯 Leitner System Logic
+- **Flashcards start at Level 0**.
+- **If answered correctly**, they move to the next level (up to Level 4).
+- **If answered incorrectly**, they go back to Level 0.
+- **Higher levels have longer review intervals**:
+  - **Level 0 → 1 day**
+  - **Level 1 → 2 days**
+  - **Level 2 → 4 days**
+  - **Level 3 → 7 days**
+  - **Level 4 → 14 days**
+- Flashcards are fetched **based on their next review date**.
+
+---
+
+## 📌 API Endpoints (Backend)
+| Method | Endpoint             | Description |
+|--------|----------------------|-------------|
+| **POST**   | `/api/flashcards`        | Add a new flashcard |
+| **GET**    | `/api/flashcards`        | Get all due flashcards |
+| **PUT**    | `/api/flashcards/:id`    | Update a flashcard level |
+| **DELETE** | `/api/flashcards/:id`    | Delete a flashcard |
+
+---
+
+## 🎨 UI Features (Frontend)
+- **Show Answer Button** – Reveals the answer.
+- **"Got it Right" / "Got it Wrong" Buttons** – Updates flashcard progress.
+- **Due Flashcards Count** – Displays how many flashcards are due for review.
+- **Minimalist UI** – Simple, clean, and distraction-free.
+
+
 
 ## Technologies Used
 
