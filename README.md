@@ -110,3 +110,20 @@ JWT_SECRET=secret123
 - JWT Authentication
 - Bcrypt for password hashing
 
+## 🖼️ Screenshots
+
+### 📌 Sign in page
+![sign in Page](screenshots/sign-in-page.png)
+
+### 📌 Sign up page
+![sign up Page](screenshots/sign-up-page.png)
+
+### 📌 Add Flashcards Page
+![add flashcards Page](screenshots/add-flashcards-page.png)
+
+### 📌 Flashcard review page
+![Flashcards review Page](screenshots/review-flashcards.png)
+
+
+
+
