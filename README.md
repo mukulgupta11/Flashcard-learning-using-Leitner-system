@@ -19,8 +19,7 @@ To try the app, use the following credentials:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-repo/flashcard-leitner-system.git
-   cd flashcard-leitner-system
+   git clone https://github.com/mukulgupta11/Flashcard-learning-using-Leitner-system
    ```
 
 2. Install dependencies for both client and server:
@@ -33,9 +32,9 @@ To try the app, use the following credentials:
 
 Create a `.env` file in the server directory with the following variables:
 ```
-MONGO_URI=mongodb://localhost:27017/flashcards
-JWT_SECRET=your_jwt_secret_key
-PORT=5000
+MONGO_URI=mongodb+srv://sruti26psty:XlcWyCq7kz55dsWR@cluster0.iqqez.mongodb.net/
+PORT=5001
+JWT_SECRET=secret123
 ```
 
 ## Running the Application
